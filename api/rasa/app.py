@@ -1,8 +1,9 @@
 from api.rasa.models import RasaRequest, RasaResponse
 import requests
 import json
+import config
 
-rasaUrl = "http://localhost:80/api"
+rasaUrl = config.RASA_URL
 
 
 def to_rasa(request: RasaRequest):
