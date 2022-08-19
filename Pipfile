@@ -9,6 +9,9 @@ uvicorn = "==0.11.3"
 pydantic = "==1.4"
 requests = "*"
 starlette = "*"
+pymongo = "*"
+schematics = "*"
+connection = "*"
 
 [dev-packages]
 
