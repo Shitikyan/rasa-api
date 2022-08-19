@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from api.rasa.app import parse_user_question
-from api.rasa.models import RasaResponse, RasaRequest
+from rasa.app import parse_user_question
+from rasa.models import RasaResponse, RasaRequest
 
 
 router = APIRouter()

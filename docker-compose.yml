@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  server:
+    build:
+      context: .
+    command: >
+      bash -c "uvicorn main:app --reload --workers 1 --host 0.0.0.0 --port 91"
+    env_file:
+      - api/.env
+    ports:
+      - '91:91'
+    expose:
+      - '91'

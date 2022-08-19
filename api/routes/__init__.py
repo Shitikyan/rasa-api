@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from api.routes.rasa_app import router as rasa_router
+from routes.rasa_app import router as rasa_router
 
 router = APIRouter()
 
